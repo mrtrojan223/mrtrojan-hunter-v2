@@ -206,7 +206,7 @@ DEEP_SCAN=false
 #  ARGUMENT PARSING
 # ─────────────────────────────────────────────
 usage() {
-cat << EOF
+text=$(cat << EOF
 ${BOLD}${MAGENTA}
   MrTrojan-Hunter v1.0 — Full-Spectrum Bug Bounty Framework
 ${RESET}
@@ -252,6 +252,8 @@ ${BOLD}Examples:${RESET}
 
 ${BOLD}${MAGENTA}  Happy Hunting!  — MrTrojan${RESET}
 EOF
+)
+echo -e "$text"
 exit 0
 }
 
